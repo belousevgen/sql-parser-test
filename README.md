@@ -1,7 +1,7 @@
 # SqlParser Test Task
 
 ### User story: 
-Create a library that accepts DDL sql script as a text, extracts **required data** and returns C# object _DataModelDto_.
+Create a library that accepts DDL sql script as a text, extracts **required data** and returns strongly typed object _DataModelDto_.
 
 Required data (JSON pseudo structure): 
 ```javascript
