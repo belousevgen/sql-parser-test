@@ -1,0 +1,37 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27703.2047
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SqlParser.Dto", "SqlParser.Dto\SqlParser.Dto.csproj", "{28275FCA-A527-45E9-B6EF-7E0A27913935}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "TestData", "TestData", "{5D7F5741-2993-4B42-B6EC-C4A7845343E2}"
+	ProjectSection(SolutionItems) = preProject
+		TestData\msSql.sql = TestData\msSql.sql
+		TestData\mySql.sql = TestData\mySql.sql
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SqlParser.Biz", "SqlParser.Biz\SqlParser.Biz.csproj", "{90444FD0-5C85-47E1-AC9A-9AE143793A51}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{28275FCA-A527-45E9-B6EF-7E0A27913935}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{28275FCA-A527-45E9-B6EF-7E0A27913935}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{28275FCA-A527-45E9-B6EF-7E0A27913935}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{28275FCA-A527-45E9-B6EF-7E0A27913935}.Release|Any CPU.Build.0 = Release|Any CPU
+		{90444FD0-5C85-47E1-AC9A-9AE143793A51}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{90444FD0-5C85-47E1-AC9A-9AE143793A51}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{90444FD0-5C85-47E1-AC9A-9AE143793A51}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{90444FD0-5C85-47E1-AC9A-9AE143793A51}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {6DE47AAF-2925-4D94-B341-B258C619FE64}
+	EndGlobalSection
+EndGlobal
