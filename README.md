@@ -26,7 +26,7 @@ public interface ISqlParserService {
 
 ### SqlParser solution:
 - SqlParser.Dto - has all required Data Transfer Objects (Dto). 
-- SqlParser.Biz - Business logic layer. It contains interface ISqlParserService and _your implementation of it_
+- SqlParser.Biz - Business logic layer. It contains interface ISqlParserService.
 - TestData - contains sql scripts for tests.
 
 ### Questions?
