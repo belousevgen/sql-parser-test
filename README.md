@@ -20,21 +20,16 @@ public interface ISqlParserService {
 
 2. Populate all fields in DataModelDto object
 
-
 ### What to use:
-- sqlparser.com library (http://sqlparser.com/download.php)
+- sqlparser.com library (http://sqlparser.com/download.php) (trial version is free for 90 days)
 - Visual Studio 2017
 - C# .Net Framework 4.7.1
 - Best practices you know. 
 
-### SqlParser Solution:
-- SqlParser.Dto - contains required for Task Data Transfer Objects (Dto). 
-- SqlParser.Biz - BL layer. It contains interface ISqlParserService
+### SqlParser solution:
+- SqlParser.Dto - has all required Data Transfer Objects (Dto). 
+- SqlParser.Biz - Business logic layer. It contains interface ISqlParserService and _your implementation of it_
 - TestData - contains sql scripts for tests.
-
-### Restrictions: 
-- Do not change anything in SqlParser.Dto project.
-- Do not modify ISqlParserService interface.
 
 ### Questions?
 - You can ask any question you have.
