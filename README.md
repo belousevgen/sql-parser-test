@@ -10,15 +10,13 @@ tables: [ { schema, name, columns: [ { name, dataType, allowNulls }, ... ] }, ..
 ```
 
 ### Development Task
-1. Implement ISqlParserService interface:
+Create a service which implements ISqlParserService interface:
 
 ```C#
 public interface ISqlParserService { 
 	DataModelDto ParseSql(DbTypeDto dbType, string sqlScript); 
 }
 ```
-
-2. Populate all fields in DataModelDto object
 
 ### What to use:
 - sqlparser.com library (http://sqlparser.com/download.php) (trial version is free for 90 days)
