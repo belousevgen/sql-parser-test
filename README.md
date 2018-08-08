@@ -4,14 +4,15 @@
 Create a library that accepts DDL sql script as a text, extracts **required data** from it and returns C# object _DataModelDto_.
 
 Required data (JSON pseudo structure): 
-```Javascript
-	{
-		schemas: [ { name }, ... ]
-		tables: [	{ schema, name
-						columns: [ { table, name, datatype, allow nulls }, ... ]
-					}, ... ]
-			
-	}
+```javascript
+{
+	schemas: [ { name }, ... ]
+	tables: [ { 
+				schema, 
+				name,
+				columns: [ { table, name, datatype, allow nulls }, ... ]
+				}, ... ]
+}
 ```
 
 ### Development Task
