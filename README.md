@@ -6,7 +6,7 @@ Create a library that accepts DDL sql script as a text, extracts **required data
 Required data (JSON pseudo structure): 
 ```javascript
 schemas: [ { name }, ... ]
-tables: [ {  schema,  name, columns: [ { table, name, datatype, allow nulls }, ... ] }, ... ]
+tables: [ { schema, name, columns: [ { name, dataType, allowNulls }, ... ] }, ... ]
 ```
 
 ### Development Task
