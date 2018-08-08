@@ -1,15 +1,15 @@
 # SqlParser Test Task
 
 ### User story: 
-	- Create a library that accepts DDL sql script as a text, extracts **required data** from it and returns C# object _DataModelDto_.
+Create a library that accepts DDL sql script as a text, extracts **required data** from it and returns C# object _DataModelDto_.
 
 
-	Required data: 
-	```Javascript
-		schemas: [ { name }, ... ]
-		tables: [ {schema, name}, ... ]
-			columns: [ { table, name, datatype, allow nulls }, ... ]
-	```
+Required data: 
+```Javascript
+	schemas: [ { name }, ... ]
+	tables: [ {schema, name}, ... ]
+		columns: [ { table, name, datatype, allow nulls }, ... ]
+```
 
 ### Development Task
 	- Implement ISqlParserService interface:
