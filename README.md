@@ -1,14 +1,27 @@
 # SqlParser Test Task
 
-## User story: 
-	- Create a library that sccepts DDL sql script as a text, extracts required data from it and converts it to C# object.
-	- Data to extract from sql script:
-		schemas: name
-		tables: schema, name
-			columns: table, name, datatype, allow nulls
+### User story: 
+	- Create a library that accepts DDL sql script as a text, extracts **required data** from it and returns C# object _DataModelDto_.
+
+
+	Required data: 
+	```Javascript
+		schemas: [ { name }, ... ]
+		tables: [ {schema, name}, ... ]
+			columns: [ { table, name, datatype, allow nulls }, ... ]
+	```
 
 ### Development Task
-	- Implement ISqlParserService interface.
+	- Implement ISqlParserService interface:
+
+	```C#
+	public interface ISqlParserService
+    {
+        DataModelDto ParseSql(DbTypeDto dbType, string sqlScript);
+    }
+	```
+
+	- Populate all fields in DataModelDto object
 
 
 ### What to use:
@@ -17,23 +30,19 @@
 	- C# .Net Framework 4.7.1
 	- Best practices you know. 
 
-
 ### SqlParser Solution:
 	- SqlParser.Dto - contains required for Task Data Transfer Objects (Dto). 
 	- SqlParser.Biz - BL layer. It contains interface ISqlParserService
 	- TestData - contains sql scripts for tests.
 
-
 ### Restrictions: 
 	- Do not change anything in SqlParser.Dto project.
 	- Do not modify ISqlParserService interface.
 
-
-### Questions:
+### Questions?
 	- You can ask any question you have.
 
-
-### Results:
+### Task results:
 	- Do not upload your code to github
 	- zip your solution and send it back to us.
 	
